@@ -1,9 +1,11 @@
+import ButtonBlue from "../components/ButtonBlue";
+
 export default function Homepage() {
   return (
     <>
       <div className="bg-white text-gray-900 font-medium px-4">
         <div className="flex">
-          <div className="w-22 px-3.5 py-3.5">
+          <div className="w-22 px-4.5 py-4.5 mx-2.5">
             <div>
               <svg
                 viewBox="0 0 24 24"
@@ -30,7 +32,7 @@ export default function Homepage() {
             </div>
             <div className="text-shadow-black">Stays</div>
           </div>
-          <div className="w-22 px-3.5 py-3.5">
+          <div className="w-22 px-4.5 py-4.5 mx-2.5">
             <div>
               <svg
                 fill="#000000"
@@ -63,7 +65,7 @@ export default function Homepage() {
             </div>
             <div>Flights</div>
           </div>
-          <div className="w-22 px-3.5 py-3.5">
+          <div className="w-22 px-3.5 py-3.5 mx-2.5">
             <div>
               <svg
                 version="1.1"
@@ -147,7 +149,7 @@ export default function Homepage() {
             <div className="py-1.5">Where to?</div>
           </div>
           <div className="flex px-2.5 border-1 rounded ring-0 ring-black">
-            <div className="w-7 mt-1.5 mr-0.5">
+            <div className="w-7 h-10 mt-1.5 mr-0.5">
               {" "}
               <svg
                 fill="#000000"
@@ -171,12 +173,48 @@ export default function Homepage() {
             </div>
           </div>
           <div className="flex px-2.5 border-1 rounded ring-0 ring-black">
-            <div>icon</div>
+            <div className="w-8 h=8 mt-1.5">
+              <svg
+                viewBox="0 0 32 32"
+                data-name="Layer 1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                stroke="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <defs>
+                    <style>.cls-1</style>
+                  </defs>
+                  <title></title>
+                  <path
+                    className="cls-1"
+                    d="M22.82,20.55l-.63-.18c-1.06-.29-1.79-.51-1.91-1.75,2.83-3,2.79-5.67,2.73-8.47,0-.38,0-.76,0-1.15a7.1,7.1,0,0,0-7-7A7.1,7.1,0,0,0,9,9c0,.39,0,.77,0,1.15-.06,2.8-.1,5.45,2.73,8.47-.12,1.24-.85,1.46-1.91,1.75l-.63.18C5.61,21.74,2,25,2,29a1,1,0,0,0,2,0c0-3,3-5.61,5.82-6.55.16-.06.34-.1.52-.15A4.11,4.11,0,0,0,13.45,20a5.4,5.4,0,0,0,5.1,0,4.11,4.11,0,0,0,3.11,2.35c.18.05.36.09.52.15C25,23.39,28,26,28,29a1,1,0,0,0,2,0C30,25,26.39,21.74,22.82,20.55Zm-9.36-3C10.9,15,10.94,12.86,11,10.18,11,9.8,11,9.4,11,9A5,5,0,0,1,21,9c0,.4,0,.8,0,1.18,0,2.68.09,4.8-2.47,7.36A3.58,3.58,0,0,1,13.46,17.54Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
             <div>
-              <div>travellers</div>
-              <div>2 travellers, 1 room</div>
+              <div className="px-2.5">Travellers</div>
+              <div className="px-2.5">2 travellers, 1 room</div>
             </div>
           </div>
+          <div>
+            <ButtonBlue
+              type={"search"}
+              style={"primary"}
+              onClick={() => console.log("Sign in")}
+            >
+              {"Search"}
+            </ButtonBlue>
+          </div>
+          {/* <button></button> */}
         </div>
         <div></div>
       </div>
