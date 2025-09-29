@@ -1,6 +1,11 @@
 "use client";
 import ButtonBlue from "../components/ButtonBlue";
 import Card from "../components/Card";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 export default function Homepage() {
   return (
     <>
@@ -222,11 +227,44 @@ export default function Homepage() {
             ></Card>
           </div>
           {/* <button></button> */}
-          <Card
-            type="explore"
-            description="Earn OneKeyCash on eligible flights, hotels, cars and more"
-            imageUrl="/explore/41584_800x560_2.webp"
-          ></Card>
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            className="my-swiper pb-12"
+          >
+            <SwiperSlide>
+              <Card
+                type="explore"
+                description="Earn OneKeyCash on eligible flights, hotels, cars and more"
+                imageUrl="/explore/41584_800x560_2.webp"
+              ></Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                type="explore"
+                description="Earn OneKeyCash on eligible flights, hotels, cars and more"
+                imageUrl="/explore/41584_800x560_2.webp"
+              ></Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                type="explore"
+                description="Earn OneKeyCash on eligible flights, hotels, cars and more"
+                imageUrl="/explore/41584_800x560_2.webp"
+              ></Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                type="explore"
+                description="Earn OneKeyCash on eligible flights, hotels, cars and more"
+                imageUrl="/explore/41584_800x560_2.webp"
+              ></Card>
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div></div>
       </div>

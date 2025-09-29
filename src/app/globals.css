@@ -19,3 +19,45 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.my-swiper .swiper-button-next,
+.my-swiper .swiper-button-prev {
+  opacity: 0;
+  pointer-events: none;
+  background-color: #ffd700; /* Brighter yellow */
+  border-radius: 50%;
+  width: 28px; /* Bigger box */
+  height: 28px;
+  color: #222; /* Darker arrow color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12); 
+  border: 2px solid #fffbe6; 
+  font-size: var(--swiper-arrow-size, 10px); /* Slightly larger arrow */
+  transition: background 0.2s, box-shadow 0.2s, opacity 0.2s;
+}
+
+/* Show buttons when hovering over .my-swiper */
+.my-swiper:hover .swiper-button-next,
+.my-swiper:hover .swiper-button-prev {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.my-swiper .swiper-button-next:hover,
+.my-swiper .swiper-button-prev:hover {
+  background-color: #ffe066; /* Lighter on hover */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+.my-swiper {
+  --swiper-arrow-size: 12px; /* Customize arrow size */
+}
+
+.my-swiper .swiper-button-next:after,
+.my-swiper .swiper-button-prev:after {
+  font-size: 10px;
+  font-weight: bold;
+}
