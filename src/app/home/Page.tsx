@@ -266,6 +266,16 @@ export default function Homepage() {
             </SwiperSlide>
           </Swiper>
         </div>
+        <div>
+          <Card
+            type={"offer"}
+            heading="Save 25% or more—members only"
+            description="Become a member for free and save 25% or more on selected hotels in The Member Appreciation Sale. Book by 20 October 2025, and stay by 31 March 2026."
+            imageUrl="explore/IN_Homepage_Desktop_1200x514.jpeg"
+            buttonText="Unlock sale deals"
+          >
+          </Card>
+        </div>
         <div></div>
       </div>
     </>
